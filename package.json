@@ -1,6 +1,6 @@
 {
   "name": "lintit",
-  "version": "7.1.0",
+  "version": "7.2.0",
   "description": "My personal eslint runner tool thingy",
   "main": "index.js",
   "scripts": {

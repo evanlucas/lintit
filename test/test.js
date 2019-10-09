@@ -5,7 +5,7 @@ const lintit = require('../')
 
 test('lintFiles', (t) => {
   t.plan(3)
-  lintit.lintFiles([], { cwd: 'bin' }, (err, result) => {
+  lintit.lintFiles(['bin/cmd.js'], {}, (err, result) => {
     t.error(err, 'no error')
     t.type(result, Object)
     t.equal(result.errorCount, 0)

@@ -9,7 +9,7 @@ module.exports = {
 , homepage: pkg.homepage
 , bugs: pkg.bugs.url
 , eslint: eslint
-, cmd: Object.keys(pkg.bin)[0]
+, cmd: 'lintit'
 , tagline: 'I <3 biscuits'
 , eslintConfig: {
     configFile: path.join(__dirname, 'eslintrc.json')

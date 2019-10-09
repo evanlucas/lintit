@@ -13,7 +13,7 @@
 //------------------------------------------------------------------------------
 
 const lodash = require(require.resolve("lodash"));
-const astUtils = require('eslint/lib/util/ast-utils');
+const astUtils = require('eslint/lib/rules/utils/ast-utils');
 const createTree = require(require.resolve("functional-red-black-tree"));
 
 //------------------------------------------------------------------------------

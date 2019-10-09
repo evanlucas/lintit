@@ -7,13 +7,13 @@
     "test": "tap test/*.js --cov"
   },
   "dependencies": {
-    "eslint": "^5.6.1",
+    "eslint": "^6.5.1",
     "help": "~2.1.2",
     "nopt": "~3.0.6",
-    "standard-engine": "^10.0.0"
+    "standard-engine": "^12.0.0"
   },
   "devDependencies": {
-    "tap": "~5.6.0"
+    "tap": "^14.6.9"
   },
   "license": "MIT",
   "bin": {

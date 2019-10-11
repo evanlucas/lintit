@@ -69,7 +69,7 @@ function onResult(err, result) {
 
   // console.log(result.results)
   const formatter = parsed.formatter || 'stylish'
-  const formatResults = require(`eslint/lib/formatters/${formatter}`)
+  const formatResults = require(`eslint/lib/cli-engine/formatters/${formatter}`)
   const out = formatResults(result.results)
   if (out) {
     console.log(out)

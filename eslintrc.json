@@ -10,7 +10,11 @@
     "arrow-body-style": [2, "always"],
     "arrow-parens": [2, "always"],
     "arrow-spacing": [2],
-    "comma-style": [2, "last"],
+    "comma-style": [2, "last", {
+      "exceptions": {
+        "ObjectPattern": false
+      }
+    }],
     "comma-spacing": [2, { "before": false, "after": true }],
     "comma-dangle": [2, "never"],
     "dot-notation": [2],

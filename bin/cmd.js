@@ -5,33 +5,35 @@
 const help = require('help')()
 const nopt = require('nopt')
 const opts = require('../options')
-const knownOpts = { help: Boolean
-, version: Boolean
-, global: [String]
-, plugin: [String]
-, env: [String]
-, fix: Boolean
-, 'formatter': [
-    'checkstyle'
-  , 'compact'
-  , 'html'
-  , 'json'
-  , 'junit'
-  , 'stylish'
-  , 'table'
-  , 'tap'
-  , 'unix'
-  , 'visualstudio'
+const knownOpts = {
+  help: Boolean,
+  version: Boolean,
+  global: [String],
+  plugin: [String],
+  env: [String],
+  fix: Boolean,
+  'formatter': [
+    'checkstyle',
+    'compact',
+    'html',
+    'json',
+    'junit',
+    'stylish',
+    'table',
+    'tap',
+    'unix',
+    'visualstudio'
   ]
 }
-const shortHand = { h: ['--help']
-, H: ['--help']
-, v: ['--version']
-, f: ['--formatter']
-, g: ['--global']
-, p: ['--plugin']
-, e: ['--env']
-, F: ['--fix']
+const shortHand = {
+  h: ['--help'],
+  H: ['--help'],
+  v: ['--version'],
+  f: ['--formatter'],
+  g: ['--global'],
+  p: ['--plugin'],
+  e: ['--env'],
+  F: ['--fix']
 }
 const parsed = nopt(knownOpts, shortHand)
 
@@ -45,10 +47,10 @@ if (parsed.version) {
 }
 
 const lintOpts = {
-  globals: parsed.global
-, plugins: parsed.plugin
-, envs: parsed.env
-, fix: parsed.fix
+  globals: parsed.global,
+  plugins: parsed.plugin,
+  envs: parsed.env,
+  fix: parsed.fix
 }
 
 const lintit = require('../')
